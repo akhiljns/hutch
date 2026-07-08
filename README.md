@@ -236,9 +236,9 @@ func (d *Driver) Publish(ctx context.Context, queue string, body []byte) error {
 func (d *Driver) Close() error { /* ... */ }
 ```
 
-See [`memory`](./memory) for a complete ~150-line reference driver,
-[`rabbitmq`](./rabbitmq) for a production-grade AMQP one (QoS, channel-light
-forwarding, reconnect, isolated publisher pool), and [`redis`](./redis) for a
+See [`connectors/memory`](./connectors/memory) for a complete ~150-line reference driver,
+[`connectors/rabbitmq`](./connectors/rabbitmq) for a production-grade AMQP one (QoS, channel-light
+forwarding, reconnect, isolated publisher pool), and [`connectors/redis`](./connectors/redis) for a
 streams-based one (consumer groups, prefetch via batched reads, idle-entry
 reclaim).
 

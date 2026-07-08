@@ -4,8 +4,8 @@
 // workers, a bounded number of in-flight messages, a configurable
 // success/failure (ack/nack) policy, per-message timeouts, and graceful
 // draining on shutdown — from the broker-specific transport. Brokers plug in
-// behind two small interfaces ([Subscriber] and [Producer]); ship with a
-// RabbitMQ driver and an in-memory driver, and add Kafka/Redis/etc. by
+// behind two small interfaces ([Subscriber] and [Producer]); ship with
+// RabbitMQ, Redis, and in-memory drivers, and add Kafka/NATS/etc. by
 // implementing the same interfaces.
 //
 // # Why it exists
